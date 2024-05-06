@@ -1,6 +1,5 @@
 import pygame
-
-from constants import *
+from Constants import *
 
 run = True
 pygame.display.set_caption("Tower Defense")
