@@ -1,4 +1,4 @@
-
+import pygame
 class View:
     def __init__(self):
         self.x = 0
@@ -26,6 +26,12 @@ class View:
     def set_y(self, y):
         self.y = y
 
+    def get_position(self):
+        return self.x, self.y
+
+    def get_centered_position(self):
+        return self.get_centered_x(), self.get_centered_y()
+
     def get_width(self):
         return self.width
 
@@ -49,3 +55,6 @@ class View:
 
     def set_should_be_centered(self, should_be_centered):
         self.should_be_centered = should_be_centered
+
+    def show_view(self, screen):
+        pass
